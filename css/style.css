@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:regular,600&display=swap");
+@import url("reset.css");
+
+
+[class*="__container"] {
+	margin: 0 auto;
+	padding-inline: 15px;
+}
+
+header{
+    background: linear-gradient(0deg,rgba(251, 157, 16, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    padding: 40px 0;
+}
+
+h1, h2{
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 1.14;
+    color: #38ccea;
+    text-align: center;
+}
+
+.support{
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #999;
+    background-color: #141414;
+    padding: 40px 0;
+}
+
+.support__container{
+    max-width: 1006px;
+}
+
+.support-form{
+    border: 1px solid #262626;
+    border-radius: 10px;
+    padding: 40px;
+    background: #0f0f0f;
+}
+
+.support-form__text{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.form-item{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 413px;
+    gap: 16px;
+}
+
+.form-item>label{
+    font-weight: 600;
+    color: #fff;
+}
+
+.form-item>input, .form-item__textarea{
+    padding: 20px;
+    border: 1px solid #262626;
+    border-radius: 8px;
+    background: #141414;
+}
+
+.form-item__textarea{
+    min-height: 163px;
+    resize: vertical;
+}
+
+.support-form__button{
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox-black{
+    display: flex;
+    flex-grow: 1;
+}
+
+.checkbox-black__input{
+    appearance: none;
+    flex-basis: 1px;
+}
+
+.checkbox-black__label{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox-black__label::before{
+    content: "";
+    border: 1px solid #262626;
+    border-radius: 4px;
+    width: 28px;
+    height: 28px;
+    background-color: #0f0f0f;
+}
+
+.checkbox-black__input:checked + .checkbox-black__label::before{
+    background: url(../img/checkbox-black-form.svg) 0 0 / 100% no-repeat;
+}
+
+.button-black{
+
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 18px 24px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #e50000;
+    transition: 0.4s;
+}
+
+
+.button-black:hover{
+    transform: scale(0.90);
+    box-shadow: 0px 0px 30px 0px rgba(241,8,8,0.75);
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(241,8,8,0.75);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(241,8,8,0.75);
+}
+
+/* discuss */
+
+.discuss{
+    padding: 26px 0;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #87909d;
+    background-color: #fff;
+}
+
+.discuss__container{
+    max-width: 590px;
+    background-color: #fff;
+}
+
+.discuss__box{
+    box-shadow: 0 59px 124px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+    padding: 88px;
+}
+
+.discuss__text{
+    margin-bottom: 50px;
+}
+
+.discuss__form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: #697484;
+    margin-bottom: 50px;
+}
+
+.discuss__form input{
+    padding-bottom: 14px;
+    border-bottom: 1.50px solid #e6e8eb;
+    outline: none;
+    width: 100%;
+}
+
+.discuss__form input:focus::placeholder{
+    color: #a53dff;
+}
+
+.discuss__form input:focus{
+    border-bottom: 1.50px solid #a53dff;
+}
+
+.discuss__form textarea{
+    padding-bottom: 24px;
+    border: 1.50px solid #e6e8eb;
+    resize: vertical;
+    outline: none;
+    border: none;
+    border-bottom: 1.50px solid #e6e8eb;
+}
+
+.discuss__form textarea:focus::placeholder{
+    color: #a53dff;
+}
+.discuss__form textarea:focus{
+     border-bottom: 1.50px solid #a53dff;
+}
+
+.discuss__form-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.discuss__form-wrapper>:nth-child(1){
+    flex-basis: 200px;
+}
+
+.discuss__form-wrapper>:nth-child(2){
+    flex-basis: 336px;
+}
+
+/* discuss___button */
+
+.discuss__button{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 4px;
+    padding: 12px 24px;
+    background-color: #a53dff;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.discuss__button:hover{
+    transform: scale(1.08);
+    background-color: #974fd6;
+}
+
+.discuss__button::after{
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url(../img/discuss-arrow.svg) center no-repeat;
+
+}
+
+.discuss__button:hover::after{
+    transform: skew(15deg);
+}
+/* Чи потрібно на кнопку вказувати всі стилі які до неї приміняються, чи тільки ті яких нам не вистачає? Наприклад Font-family. Мова йде про те як краще буде якщо її потрібно буде перевикористати */
+
+footer{
+    background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(251, 157, 16, 1) 100%);
+    padding: 40px 0;
+    text-align: center;
+}
+
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 14</title>
+</head>
+<body>
+    <div class="wpapper">
+        <header>
+            <h1>Homework 14</h1>
+        </header>
+        <main>
+            <div class="support">
+                <div class="support__container">
+                    <form enctype="multipart/form-data" action="#" class="support-form">
+                        <div class="support-form__text">
+                            <div class="form-item">
+                                <label for="first-name">First Name</label>
+                                <input name="form[]" placeholder="Enter First Name" required id="first-name" type="text">
+                            </div>
+                            <div class="form-item">
+                                <label for="last-name">Last Name</label>
+                                <input name="form[]" placeholder="Enter Last Name" required id="last-name" type="text">
+                            </div>
+                            <div class="form-item">
+                                <label for="email">Email</label>
+                                <input name="form[]" placeholder="Enter your Email" id="email" type="email">
+                            </div>
+                            <div class="form-item">
+                                <label for="phone">Phone Number</label>
+                                <input name="form[]" placeholder="Enter Phone Number" required id="phone" type="tel">
+                            </div>
+                            <div class="form-item">
+                                <label for="textarea">Message</label>
+                                <textarea name="form[]" placeholder="Enter your Message" type="text" id="textarea" class="form-item__textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="support-form__button">
+                            <div class="checkbox-black">
+                                <input name="form[]" id="checkbox" type="checkbox" class="checkbox-black__input">
+                                <label class="checkbox-black__label" for="checkbox">I agree with Terms of Use and Privacy Policy</label>
+                            </div>
+                            <button class="button-black" type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="discuss">
+                <div class="discuss__container">
+                    <div class="discuss__box">
+                        <p class="discuss__text">There are many variations of passages of Lorem Ipsu available,
+but the                     majority have suffered alte.</p>
+                        <form enctype="multipart/form-data" action="#" class="discuss__form">
+                            <input name="form[]" placeholder="Name*" type="text">
+                            <input name="form[]" placeholder="Email*" type="email">
+                            <input name="form[]" placeholder="Location" type="text">
+                            <div class="discuss__form-wrapper ">
+                                <input name="form[]" placeholder="Budget*" type="text">
+                                <input name="form[]" placeholder="Subject*" type="text">
+                            </div>
+                            <textarea name="form[]" placeholder="Message*" id="" type="text" ></textarea>
+                        </form>
+                        <button type="submit" class="discuss__button">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h2>The end</h2>
+            <p>© 2025 Всі права захищені.</p>
+        </footer>
+    </div>
+</body>
+</html>
