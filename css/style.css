@@ -326,7 +326,7 @@ legend{
 
 .search__button::before{
     content: "";
-    background-image: url("/img/dandruff.svg");       
+    background-image: url("../img/dandruff.svg");       
     width: 20px;                     
     height: 20px;
     background-size: contain;        
