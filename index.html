@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
     <link rel="stylesheet" href="css/style.css">
     <title>Lesson 14</title>
 </head>
@@ -53,21 +55,48 @@
                         <p class="discuss__text">There are many variations of passages of Lorem Ipsu available,
 but the                     majority have suffered alte.</p>
                         <form enctype="multipart/form-data" action="#" class="discuss__form">
-                            <input name="form[]" placeholder="Name*" type="text">
-                            <input name="form[]" placeholder="Email*" type="email">
-                            <input name="form[]" placeholder="Location" type="text">
-                            <div class="discuss__form-wrapper ">
-                                <input name="form[]" placeholder="Budget*" type="text">
-                                <input name="form[]" placeholder="Subject*" type="text">
+                            <div class="discuss__form-wrapper">
+                                <input name="form[]" placeholder="Name*" type="text">
+                                <input name="form[]" placeholder="Email*" type="email">
+                                <input name="form[]" placeholder="Location" type="text">
+                                <div class="discuss__wrapper-form ">
+                                    <input name="form[]" placeholder="Budget*" type="text">
+                                    <input name="form[]" placeholder="Subject*" type="text">
+                                </div>
+                                <textarea name="form[]" placeholder="Message*" id="" type="text" ></textarea>
                             </div>
-                            <textarea name="form[]" placeholder="Message*" id="" type="text" ></textarea>
+                            <button type="submit" class="discuss__button">
+                                Submit
+                            </button>
                         </form>
-                        <button type="submit" class="discuss__button">
-                            Submit
-                        </button>
+                        
                     </div>
                 </div>
             </div>
+            <div class="practice">
+                <fielset class="radio-button">
+                    <legend>Drinks</legend>
+                    <div class="radio-button__item">
+                        <input type="radio" id="button-one" name="drink" value="tea" class="radio-button__input">
+                        <label for="button-one">tea</label>
+                    </div>
+                    <div class="radio-button__item">
+                        <input type="radio" id="button-two" name="drink" value="coffee" class="radio-button__input">
+                        <label for="button-two">coffee</label>
+                    </div>
+                    <div class="radio-button__item">
+                        <input type="radio" id="button-three" name="drink" value="coke" class="radio-button__input">
+                        <label for="button-three">coke</label>
+                        <!-- value — це те, що передається у форму, коли ти натискаєш “Відправити”. -->
+                    </div>  
+                </fielset>  
+                	
+				<form action="#" class="search">
+					<input type="search" placeholder="Пошук..." class="search__input">
+					<button type="submit" class="search__button"></button>
+				</form>
+				
+            </div>  
         </main>
         <footer>
             <h2>The end</h2>
