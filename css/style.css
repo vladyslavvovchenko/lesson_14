@@ -84,7 +84,21 @@ h1, h2{
 
 .checkbox-black__input{
     appearance: none;
-    flex-basis: 1px;
+    -webkit-appearance: none;
+    clip-path: inset(50%);
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.checkbox-black__input:focus-visible + .checkbox-black__label{
+    outline: 1px solid #fff;
+    border-radius: 8px;
 }
 
 .checkbox-black__label{
@@ -190,6 +204,7 @@ h1, h2{
     outline: none;
     border: none;
     border-bottom: 1.50px solid #e6e8eb;
+    min-height: 45px;
 }
 
 .discuss__form-wpapper textarea:focus::placeholder{

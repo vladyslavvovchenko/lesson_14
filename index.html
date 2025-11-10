@@ -74,27 +74,24 @@ but the                     majority have suffered alte.</p>
                 </div>
             </div>
             <div class="practice">
-                <fielset class="radio-button">
-                    <legend>Drinks</legend>
-                    <div class="radio-button__item">
-                        <input type="radio" id="button-one" name="drink" value="tea" class="radio-button__input">
-                        <label for="button-one">tea</label>
-                    </div>
-                    <div class="radio-button__item">
-                        <input type="radio" id="button-two" name="drink" value="coffee" class="radio-button__input">
-                        <label for="button-two">coffee</label>
-                    </div>
-                    <div class="radio-button__item">
-                        <input type="radio" id="button-three" name="drink" value="coke" class="radio-button__input">
-                        <label for="button-three">coke</label>
-                        <!-- value — це те, що передається у форму, коли ти натискаєш “Відправити”. -->
-                    </div>  
-                </fielset>  
-                	
-				<form action="#" class="search">
-					<input type="search" placeholder="Пошук..." class="search__input">
-					<button type="submit" class="search__button"></button>
-				</form>
+                <form enctype="multipart/form-data" action="#">
+                    <fielset class="radio-button">
+                        <legend>Drinks</legend>
+                        <div class="radio-button__item">
+                            <input type="radio" id="button-one" name="drink" value="tea" class="radio-button__input">
+                            <label for="button-one">tea</label>
+                        </div>
+                        <div class="radio-button__item">
+                            <input type="radio" id="button-two" name="drink" value="coffee" class="radio-button__input">
+                            <label for="button-two">coffee</label>
+                        </div>
+                        <div class="radio-button__item">
+                            <input type="radio" id="button-three" name="drink" value="coke" class="radio-button__input">
+                            <label for="button-three">coke</label>
+                            <!-- value — це те, що передається у форму, коли ти натискаєш “Відправити”. -->
+                        </div>  
+                    </fielset>  
+                </form>
 				
             </div>  
         </main>
